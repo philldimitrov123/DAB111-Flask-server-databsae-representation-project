@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title Here</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@latest/css/pico.min.css">
+    <style>
+        h1{
+            color: navy;
+        }
+        h3{
+            color: navy;
+        }
+        ul {
+        list-style-type: none;
+        padding: 0;
+        font-size: 1.2em;
+    }
+
+    li {
+        margin-bottom: 10px;
+    
+    }
+    
+    p {
+        font-size: 1.5em;
+    }
+
+    a {
+        margin-right: 20px;
+        color: blue;
+    }
+    strong{
+        color:navy;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+    <a href="{{url_for('index')}}">Back to home <--</a>
+    <a href="{{url_for('data')}}">Data --></a>
+    </nav>
+    <h1>About The Hotel Data</h1>
+        <p>This site contains hotel booking data across various countries, The data is originally from the article Hotel Booking Demand Datasets, written by Nuno Antonio, Ana Almeida and Luis Nunes.
+            The original data set contains information about bookings that were cancelled and ones that were not, we cleaned the data set to only include bookings that were not cancelled.  
+        </p>
+    <h3>Link to Data</h3>
+        <p><a href="https://www.kaggle.com/datasets/lava18/google-play-store-apps/"> Kaggle - Link to the dataset </a></p>
+
+    <h1>Variable Descriptions</h1>
+        <ol>
+        <li><strong>Hotel:</strong> Type of hotel that was booked, could be city hotel or resort hotel</li>
+        <li><strong>Country:</strong> Which country the stay was booked in, it is abreviated</li>
+        <li><strong>reservation_status_date:</strong> The date the reservation was booked</li>
+        <li><strong>total_nights_stayed:</strong> Total nights stayed</li>
+        <li><strong>adr:</strong> Average daily rate of the stay in dollars</li>
+        <li><strong>adults:</strong> Amount of adults</li>
+        <li><strong>children:</strong> Amount of children</li>
+        <li><strong>babies:</strong> Amount of babies</li>
+        <li><strong>required_parking_spaces:</strong> Total parking spaces required for the stay</li>
+        <li><strong>total_of_special_requests:</strong> Total special requests submitted during the stay</li>
+</ol>
+</body>
+</html>
