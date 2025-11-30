@@ -11,9 +11,9 @@ https://www.kaggle.com/datasets/mojtaba142/hotel-booking
 
 # Running the app
 Below are the following steps to run the application succesfully:
-  - Clone this repository to your local machine.
+  - Clone this repository to your local environment.
   - Select the Hotel database folder.
   - Install the required packages by running pip install -r requirements.txt.
-  - Execute the Flask application by running python app.py in the terminal
+  - Run the application by running python app.py in the terminal
 
 
